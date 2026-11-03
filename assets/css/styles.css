@@ -87,3 +87,9 @@
 .home-page .simple-proof-copy p{font-size:12px;line-height:1.8;color:#a5b2ad}
 .home-page .simple-proof-copy a{font-size:11px;font-weight:700;color:#9be477}
 @media(max-width:760px){.home-page .simple-case-proof{grid-template-columns:1fr}.home-page .simple-proof-visual{min-height:190px}}
+
+/* Real product evidence */
+.home-page .simple-case-figure{margin:28px 0 32px;padding:12px;border:1px solid #2b3b30;border-radius:10px;background:#101812;max-width:100%}
+.home-page .simple-case-figure img{display:block;width:100%;height:auto;max-height:560px;object-fit:contain;object-position:left top;border-radius:5px;background:#0b100c}
+.home-page .simple-case-figure figcaption{padding:11px 4px 2px;font-size:10px;line-height:1.6;color:#94a49a;letter-spacing:.15px}
+.home-page .simple-inline-case h4{margin-top:30px}
