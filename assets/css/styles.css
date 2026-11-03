@@ -98,3 +98,44 @@
 .home-page .simple-profile{margin:0 0 22px;display:flex;align-items:center}
 .home-page .simple-profile img{width:104px;height:104px;display:block;object-fit:cover;border-radius:50%;border:2px solid #8fdb67;box-shadow:0 0 0 6px #142018}
 @media(max-width:440px){.home-page .simple-profile img{width:88px;height:88px}}
+
+
+/* Responsive refinements: desktop hierarchy and mobile navigation */
+.home-page .simple-header nav{min-width:0}
+.home-page .simple-header nav a{white-space:nowrap}
+.home-page .simple-project{min-width:0}
+.home-page .simple-project-main{min-width:0}
+.home-page .simple-skills article{min-width:0}
+.home-page .simple-case-meta span{overflow-wrap:anywhere}
+.home-page .simple-inline-case{scroll-margin-top:88px}
+.home-page .simple-contact .simple-button{display:inline-flex}
+@media(min-width:1100px){
+  .home-page .simple-hero{padding-top:118px;padding-bottom:82px}
+  .home-page .simple-section{padding-top:88px;padding-bottom:88px}
+  .home-page .simple-project{grid-template-columns:48px minmax(0,1fr) 170px;gap:22px}
+}
+@media(max-width:760px){
+  .home-page .simple-header{align-items:center;flex-direction:row;flex-wrap:wrap;padding:12px 18px}
+  .home-page .simple-header nav{width:100%;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;padding:2px 0 5px;scrollbar-width:none}
+  .home-page .simple-header nav::-webkit-scrollbar{display:none}
+  .home-page .simple-header nav a:nth-child(4){display:inline}
+  .home-page .simple-hero{padding-top:62px}
+  .home-page .simple-project{grid-template-columns:25px minmax(0,1fr);gap:10px}
+  .home-page .simple-project-status{grid-column:2;text-align:left}
+  .home-page .simple-inline-case .simple-skills{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .home-page .simple-contact{padding:58px 0}
+}
+@media(max-width:440px){
+  .home-page .simple-header{gap:7px}
+  .home-page .simple-header nav{gap:17px;font-size:11px}
+  .home-page .simple-header nav a:nth-child(2),
+  .home-page .simple-header nav a:nth-child(3),
+  .home-page .simple-header nav a:nth-child(4){display:inline}
+  .home-page .simple-skills,
+  .home-page .simple-approach,
+  .home-page .simple-inline-case .simple-skills{grid-template-columns:1fr}
+  .home-page .simple-case-meta{grid-template-columns:1fr 1fr}
+  .home-page .simple-inline-heading{gap:8px}
+  .home-page .simple-project h3{font-size:20px}
+  .home-page .simple-facts{font-size:10px}
+}
