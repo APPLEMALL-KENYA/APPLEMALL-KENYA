@@ -1,0 +1,65 @@
+.gallery-intro {
+  max-width: 760px;
+}
+
+.case-study-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.case-shot {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+}
+
+.case-shot a {
+  display: block;
+  background: #e9edf0;
+}
+
+.case-shot a:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: -2px;
+}
+
+.case-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.case-shot figcaption {
+  display: grid;
+  gap: 5px;
+  padding: 16px 18px 18px;
+}
+
+.case-shot figcaption strong {
+  font-size: 13px;
+}
+
+.case-shot figcaption span {
+  color: #aab5c0;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.case-shot-wide {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 760px) {
+  .case-study-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .case-shot-wide {
+    grid-column: auto;
+  }
+}
